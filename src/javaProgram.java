@@ -12,7 +12,8 @@ public class javaProgram {
         System.out.printf(String.format("%d %S %d%n", age, name, age));
         System.out.println(name);
         javaProgram.method2(null);
-        javaProgram.randomNumGen(5);
+        //javaProgram.randomNumGen(5);
+        randomNumFunction.randomNumber(25);
     }
     public static void method2(String[] args) {
         System.out.println("hello mike");
@@ -26,7 +27,7 @@ public class javaProgram {
     }
     public static void randomNumGen(int passIn) {
 //random
-        int num = passIn + 200;
+        int num = passIn;
         System.out.println();
         System.out.println(num);
         Random randomNum = new Random();
@@ -38,6 +39,9 @@ public class javaProgram {
         System.out.println(thisNum3);
         String result = String.valueOf(thisNum + "" + thisNum2 + "" + thisNum3);
         System.out.println(result);
+        String result2 = result + 1;
+        System.out.println(result2);
+
 
     }
 }
