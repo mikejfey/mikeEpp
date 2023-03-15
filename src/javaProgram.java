@@ -25,13 +25,14 @@ public class javaProgram {
         System.out.println(name);
     }
     public static void randomNumGen(int passIn) {
-
+//random
         int num = passIn + 200;
         System.out.println();
         System.out.println(num);
         Random randomNum = new Random();
         int thisNum = randomNum.nextInt(1000);
         System.out.println(thisNum);
+
 
     }
 }
