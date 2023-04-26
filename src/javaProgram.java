@@ -14,6 +14,10 @@ public class javaProgram {
         javaProgram.method2(null);
         //javaProgram.randomNumGen(5);
         randomNumFunction.randomNumber(25);
+        javaProgram.stackTr();
+        System.out.println("this is a value returned from a different class");
+        int thisVal = returnTheValue.theValue(25);
+        System.out.println(thisVal);
     }
     public static void method2(String[] args) {
         System.out.println("hello mike");
@@ -44,4 +48,27 @@ public class javaProgram {
 
 
     }
-}
+
+
+
+        public static void stackTr() {
+
+            System.out.println("this is StackTr");
+            methodA();
+
+        }
+
+        public static void methodA() {
+            try {
+                int num1 = 5/0; // java.lang.ArithmeticException: divide by zero
+                System.out.println("xxxxxxxxxxxx");
+                System.out.printf("hello %.2f", num1);
+                System.out.println();
+                System.out.println(num1);
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+

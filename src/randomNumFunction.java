@@ -18,7 +18,10 @@ public class randomNumFunction {
         System.out.println(result);
         String result2 = result + 1;
         System.out.println(result2);
-
-
     }
+
+    public static void methodA(int passInt2) {
+        randomNumFunction newObj = new randomNumFunction();
+    }
+
 }
